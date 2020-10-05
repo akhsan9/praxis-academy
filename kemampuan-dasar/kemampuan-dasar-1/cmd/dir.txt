@@ -1,0 +1,27 @@
+C:\Users\DeLL>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0C4D-4517
+
+ Directory of C:\Users\DeLL
+
+02-Aug-20  09:20 PM    <DIR>          .
+02-Aug-20  09:20 PM    <DIR>          ..
+24-Jan-20  10:53 PM    <DIR>          .android
+24-Jan-20  10:29 PM    <DIR>          .AndroidStudio2.2
+09-Apr-20  05:17 PM    <DIR>          3D Objects
+09-Apr-20  05:17 PM    <DIR>          Contacts
+04-Jul-20  07:52 PM    <DIR>          Desktop
+08-Sep-20  11:44 PM    <DIR>          Documents
+03-Oct-20  05:04 PM    <DIR>          Downloads
+09-Apr-20  05:17 PM    <DIR>          Favorites
+09-Apr-20  05:17 PM    <DIR>          Links
+09-Apr-20  05:17 PM    <DIR>          Music
+05-Oct-20  10:21 AM    <DIR>          OneDrive
+05-Oct-20  12:54 PM    <DIR>          Pictures
+09-Apr-20  05:17 PM    <DIR>          Saved Games
+09-Apr-20  05:17 PM    <DIR>          Searches
+09-Apr-20  05:17 PM    <DIR>          Videos
+               0 File(s)              0 bytes
+              17 Dir(s)  48,297,930,752 bytes free
+
+untuk menampilkan direcory

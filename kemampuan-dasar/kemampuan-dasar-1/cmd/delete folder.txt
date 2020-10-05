@@ -1,0 +1,22 @@
+C:\Users\DeLL\Pictures>rd "geograf"
+
+C:\Users\DeLL\Pictures>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0C4D-4517
+
+ Directory of C:\Users\DeLL\Pictures
+
+05-Oct-20  01:06 PM    <DIR>          .
+05-Oct-20  01:06 PM    <DIR>          ..
+01-Jul-20  10:04 AM            64,305 1000x1000.jpg
+13-Nov-19  11:01 AM    <DIR>          Camera Roll
+01-Jul-20  09:59 AM            70,244 Dragon-and-Baby-Dragon-With-Castle-New-Baby-Card_259G2054_01.jpg
+05-Oct-20  01:00 PM    <DIR>          pemandangan
+05-Oct-20  11:55 AM    <DIR>          Saved Pictures
+24-Jan-20  04:06 PM           231,051 sdkcomponent.png
+               3 File(s)        365,600 bytes
+               5 Dir(s)  48,298,962,944 bytes free
+
+Menghapus direktori dan menghapus file menggunakan CMD cukup menggunakan perintah " rd " dan " del ".
+
+Perintah " rd " sendiri untuk menghapus folder, sebagai contoh disini saya akan menghapus folder geograf di atas dengan perintah rd "geograf"

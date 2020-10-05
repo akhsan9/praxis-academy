@@ -1,0 +1,16 @@
+C:\Users\DeLL>netstat
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    192.168.1.46:50519     203:https              ESTABLISHED
+  TCP    192.168.1.46:50603     lb-140-82-112-25-iad:https  ESTABLISHED
+  TCP    192.168.1.46:50607     sin10s11-in-f14:http   ESTABLISHED
+  TCP    192.168.1.46:50649     130:https              ESTABLISHED
+  TCP    192.168.1.46:50651     130:https              ESTABLISHED
+  TCP    192.168.1.46:50658     a-0001:https           ESTABLISHED
+  TCP    192.168.1.46:50665     53:https               TIME_WAIT
+
+C:\Users\DeLL>
+
+menampilkan statistik jaringan

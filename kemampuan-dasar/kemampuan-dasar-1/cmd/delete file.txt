@@ -1,0 +1,20 @@
+C:\Users\DeLL\Pictures>del "G0a.png"
+C:\Users\DeLL\Pictures>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0C4D-4517
+
+ Directory of C:\Users\DeLL\Pictures
+
+05-Oct-20  01:04 PM    <DIR>          .
+05-Oct-20  01:04 PM    <DIR>          ..
+01-Jul-20  10:04 AM            64,305 1000x1000.jpg
+13-Nov-19  11:01 AM    <DIR>          Camera Roll
+01-Jul-20  09:59 AM            70,244 Dragon-and-Baby-Dragon-With-Castle-New-Baby-Card_259G2054_01.jpg
+05-Oct-20  12:14 PM    <DIR>          geograf
+05-Oct-20  01:00 PM    <DIR>          pemandangan
+05-Oct-20  11:55 AM    <DIR>          Saved Pictures
+24-Jan-20  04:06 PM           231,051 sdkcomponent.png
+               3 File(s)        365,600 bytes
+               6 Dir(s)  48,299,839,488 bytes free
+
+Menghapus File menggunakan perintah " del " pada PowerShell. sebagai contoh saya akan menghapus file 'baby.jpg" dengan perintah del'babyjpg'

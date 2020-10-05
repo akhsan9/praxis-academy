@@ -1,0 +1,13 @@
+C:\Users\DeLL>netsh wlan show profiles
+
+Profiles on interface Wi-Fi 2:
+
+Group policy profiles (read only)
+---------------------------------
+    <None>
+
+User profiles
+-------------
+    All User Profile     : BIMAHACKERS #2
+
+menampilkan seluruh wifi yang pernah terhubung di computer

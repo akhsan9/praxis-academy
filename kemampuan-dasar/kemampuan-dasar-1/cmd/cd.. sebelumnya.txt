@@ -1,0 +1,7 @@
+C:\Users\DeLL\Pictures\pemandangan>cd..
+
+C:\Users\DeLL\Pictures>cd..
+
+C:\Users\DeLL>
+
+masuk ke folder sebelumnya

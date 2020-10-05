@@ -1,0 +1,18 @@
+C:\Users\DeLL\Pictures\pemandangan>ren "G0a.png" "goacemara"
+
+C:\Users\DeLL\Pictures\pemandangan>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0C4D-4517
+
+ Directory of C:\Users\DeLL\Pictures\pemandangan
+
+05-Oct-20  01:14 PM    <DIR>          .
+05-Oct-20  01:14 PM    <DIR>          ..
+01-Jul-20  10:04 AM            64,305 1000x1000.jpg
+09-Sep-20  12:49 PM         2,693,085 goacemara
+               2 File(s)      2,757,390 bytes
+               2 Dir(s)  48,301,277,184 bytes free
+
+C:\Users\DeLL\Pictures\pemandangan>
+
+mengubah nama file

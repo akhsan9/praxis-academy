@@ -1,0 +1,4 @@
+C:\Users\DeLL\Pictures> copy G0a.png "C:\Users\DeLL\Pictures\pemandangan"
+        1 file(s) copied.
+
+mengcopy file ke older yang dituju

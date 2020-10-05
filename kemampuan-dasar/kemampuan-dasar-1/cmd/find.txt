@@ -1,0 +1,3 @@
+C:\Users\DeLL\Pictures>find "sdkcomponent.png"
+
+menemukan Untuk menemukan teksnya, "sdkcomponent.png"

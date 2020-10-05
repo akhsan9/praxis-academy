@@ -1,0 +1,4 @@
+C:\Users\DeLL>date /t
+05-Oct-20
+
+menampilkan tanggal pada sistem

@@ -1,0 +1,3 @@
+PS C:\Users\DeLL> cd pictures
+
+menuju ke folder yang dikehendaki

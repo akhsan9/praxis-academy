@@ -1,0 +1,10 @@
+C:\Users\DeLL>attrib
+A   H   I            C:\Users\DeLL\NTUSER.DAT
+A  SH                C:\Users\DeLL\ntuser.dat.LOG1
+A  SH                C:\Users\DeLL\ntuser.dat.LOG2
+A  SH                C:\Users\DeLL\NTUSER.DAT{1b218191-05c8-11ea-8ced-f04da2965796}.TM.blf
+A  SH                C:\Users\DeLL\NTUSER.DAT{1b218191-05c8-11ea-8ced-f04da2965796}.TMContainer00000000000000000001.regtrans-ms
+A  SH                C:\Users\DeLL\NTUSER.DAT{1b218191-05c8-11ea-8ced-f04da2965796}.TMContainer00000000000000000002.regtrans-ms
+   SH                C:\Users\DeLL\ntuser.ini
+
+Menampilkan, mengatur, atau menghapus atribut read-only, archive, system, dan hidden yang terpasang pada file atau folder

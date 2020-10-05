@@ -1,0 +1,19 @@
+C:\Users\DeLL\Pictures>move "1000x1000.jpg" "c:\users\dell\pictures\pemandangan"
+        1 file(s) moved.
+
+C:\Users\DeLL\Pictures\pemandangan>dir
+ Volume in drive C has no label.
+ Volume Serial Number is 0C4D-4517
+
+ Directory of C:\Users\DeLL\Pictures\pemandangan
+
+05-Oct-20  01:11 PM    <DIR>          .
+05-Oct-20  01:11 PM    <DIR>          ..
+01-Jul-20  10:04 AM            64,305 1000x1000.jpg
+09-Sep-20  12:49 PM         2,693,085 G0a.png
+               2 File(s)      2,757,390 bytes
+               2 Dir(s)  48,300,822,528 bytes free
+
+C:\Users\DeLL\Pictures\pemandangan>
+
+untuk memindahkan file

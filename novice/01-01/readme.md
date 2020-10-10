@@ -1,30 +1,77 @@
-# Minggu 01
 
-## Hari 1: Python, Ekosistem Python, dan Dasar-dasar Pemrograman Python
+          <p> sjoi<p>
 
-### Pembelajaran
+### Hari 1: Python
+<blockquote>
+  <p>Dorothy followed her through many of the beautiful rooms in her castle.</p>
+</blockquote>
 
 ```
-Materi dan Penjelasan
+
 ```
 
-1. Keterkaitan antara [bahasa pemrograman](https://en.wikipedia.org/wiki/Programming_language), [compiler](https://en.wikipedia.org/wiki/Compiler), dan [interpreter](https://en.wikipedia.org/wiki/Interpreter_(computing)).
+1. Pembahasan interpreter dan compiler
 
-    Sebuah bahasa pemrograman adalah bahasa formal yang terdiri dari set instruksi yang menghasilkan berbagai macam keluaran . Bahasa pemrograman digunakan dalam pemrograman komputer untuk mengimplementasikan algoritma . 
+    Bahasa pemrograman adalah bahasa formal yang terdiri dari set instruksi yang menghasilkan berbagai macam keluaran yang digunakan untuk mengimplementasikan algoritma . 
     Kebanyakan bahasa pemrograman terdiri dari instruksi untuk komputer .
-    Sebuah implementasi dari bahasa pemrograman menyediakan cara untuk menulis program dalam bahasa itu dan mengeksekusi mereka pada satu atau lebih konfigurasi hardware dan software. Secara umum, ada dua pendekatan untuk implementasi bahasa pemrograman: kompilasi dan interpretasi . Secara umum dimungkinkan untuk mengimplementasikan bahasa menggunakan salah satu teknik.
+    Sebuah implementasi dari bahasa pemrograman menyediakan cara untuk menulis program dalam bahasa itu dan mengeksekusi mereka pada satu atau lebih konfigurasi hardware dan software. 
+    Secara umum, ada dua pendekatan untuk implementasi bahasa pemrograman: kompilasi dan interpretasi . 
 
-      Dalam komputasi , kompilator adalah program komputer yang menerjemahkan kode komputer yang ditulis dalam satu bahasa pemrograman ( bahasa sumber ) ke bahasa lain ( bahasa target ). Nama "compiler" terutama digunakan untuk program yang menerjemahkan kode sumber dari bahasa pemrograman tingkat tinggi ke bahasa tingkat yang lebih rendah (misalnya, PHP, Python, Ruby and Lua.)
+    Compiler atau Kompilator adalah program komputer yang menerjemahkan kode komputer yang ditulis dalam satu bahasa pemrograman ( bahasa sumber ) ke bahasa lain ( bahasa target ). Nama "compiler" terutama digunakan untuk program yang menerjemahkan kode sumber dari bahasa pemrograman tingkat tinggi ke bahasa tingkat yang lebih rendah (misalnya, PHP, Python, Ruby and Lua.)
 
-    Implementasi dari bahasa pemrograman menyediakan cara untuk menulis program dalam bahasa itu dan mengeksekusi mereka pada satu atau lebih konfigurasi hardware dan software. Secara umum, ada dua pendekatan untuk implementasi bahasa pemrograman: kompilasi dan interpretasi . Secara umum dimungkinkan untuk mengimplementasikan bahasa menggunakan salah satu teknik.
+    Interpreter adalah program komputer yang secara langsung menjalankan instruksi yang ditulis dalam bahasa pemrograman atau scripting , tanpa mengharuskannya sebelumnya telah dikompilasi ke dalam program bahasa mesin
 
-     interpreter adalah program komputer yang secara langsung menjalankan instruksi yang ditulis dalam bahasa pemrograman atau scripting , tanpa mengharuskannya sebelumnya telah dikompilasi ke dalam program bahasa mesin
+2. Programing tool
+    
+    Adalah program komputer dimana software development yang gunakan untuk membuat'create', debug, maintain, atau mendukung program lain dan aplikasi. 
 
-Output dari kompilator dapat dieksekusi oleh perangkat keras atau program yang disebut juru bahasa. Dalam beberapa implementasi yang menggunakan pendekatan interpreter, tidak ada batasan yang jelas antara kompilasi dan interpreting. Misalnya, beberapa implementasi BASIC mengkompilasi dan kemudian mengeksekusi sumber baris pada satu waktu. 
-2. Komponen dari [peranti pengembangan (*development tools*)](https://en.wikipedia.org/wiki/Programming_tool) dan bisa mencari komponen-komponen untuk suatu bahasa pemrograman tertentu.
-3. Keterkaitan antara [Python sebagai bahasa pemrograman](https://en.wikipedia.org/wiki/Python_(programming_language)) dengan [implementasi Python](https://en.wikipedia.org/wiki/Python_(programming_language)#Implementations).
+3. Implementasi Python
+    
+    CPython adalah implementasi referensi dari Python yang ditulis di bahasa C,CPython mengkompilasi program Python menjadi bytecode perantara yang kemudian dieksekusi oleh virtual machine.
 
-  CPython adalah implementasi referensi dari Python. 
+    PyPy adalah interpreter Python 2.7 dan 3.6 yang cepat dan sesuai. tetapi pada library yang ditulis dalam C tidak dapat digunakan dengan PyPy.
+
+    Stackless Python adalah fork penting dari CPython yang mengimplementasikan microthreads itu tidak menggunakan tumpukan memori bahasa C, sehingga memungkinkan program bersamaan secara masif. PyPy juga memiliki versi tanpa tumpukan'stackless'. 
+
+    MicroPython dan CircuitPython adalah varian Python 3 yang dioptimalkan untuk mikrokontroler . Ini termasuk Lego Mindstorms EV3 .
+  4. Riwayat versi dari Python.
+      
+      Rilis sebelum versi implementasi dimulai - Desember 1989 [2]
+      Rilis internal di Centrum Wiskunde & Informatica - 1990
+- [versi sampai -][ tanggal rilis]
+
+- 0.9   0.9.9 [2] 	1991-02-20 
+
+- 1.0 	1.0.4 [2] 	1994-01-26 [2]
+ 	
+- 1.1 	1.1.1 [2] 	1994-10-11 [2] 	
+- 1.2 		1995-04-13 [2]
+- 1.3 		1995-10-13 [2] 	
+- 1.4 		1996-10-25 [2] 
+- 1.5 	1.5.2 [39] 	1998-01-03 [2] 	
+- 1.6 	1.6.1 [39] 	2000-09-05 [40] 
+- 2.0 	2.0.1 [41] 	2000-10-16 [42] 
+- 2.1 	2.1.3 [41] 	2001-04-15 [43] 
+- 2.2 	2.2.3 [41] 	2001-12-21 [44] 
+- 2.3 	2.3.7 [41] 	2003-06-29 [45] 
+- 2.4 	2.4.6 [41] 	2004-11-30 [46] 
+- 2.5 	2.5.6 [41] 	2006-09-19 [47]]
+- 2.6 	2.6.9 [26] 	2008-10-01 [26] 
+- 2.7 	2.7.18 [31] 	2010-07-03 [31] 
+- 3.0 	3.0.1 [41] 	2008-12-03 [26] 
+- 3.1 	3.1.5 [49] 	2009-06-27 [49] 
+- 3.2 	3.2.6 [51] 	2011-02-20 [51] 
+- 3.3 	3.3.7 [52] 	2012-09-29 [52] 
+- 3.4 	3.4.10 [53] 	2014-03-16 [53] 	
+- 3.5 	3.5.10 [55] 	13-09-2015 [55] 	
+- 3.6 	3.6.12 [57] 	23-12-2016 [57] 
+- 3.7 	3.7.9 [58] 	2018-06-27 [58] 
+- 3.8 	3.8.6 [59] 	2019-10-14 [59] 
+- 3.9 	3.9.0 kandidat 1 [60] 	2020-10-05 [60] 
+- 3.10 		2021-10-25 
+
+ 5. 
+
   <table class="wikitable"><caption><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Ringkasan tipe bawaan Python 3
 </font></font></caption>
 <tbody><tr><th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tipe

@@ -1,0 +1,13 @@
+#- <some folder present in the sys.path>/
+    - world/
+        - __init__.py
+        - asia/
+            - __init__.py
+            - india/
+                - __init__.py
+                - foo.py
+        - africa/
+            - __init__.py
+            - madagascar/
+                - __init__.py
+                - bar.py

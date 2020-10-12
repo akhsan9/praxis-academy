@@ -85,7 +85,7 @@
     pip install -U pip
     ```
 
-    Di Windows 4 :
+    Di Windows NT 4.0 :
 
     ``` 
     python -m pip install -U pip 
@@ -105,3 +105,180 @@
 * pip3 install numpy
 
 
+6. algoritma short
+
+* Bubble sort
+
+    Bubble sort (metode gelembung) adalah metode/algoritma pengurutan dengan dengan cara melakukan penukaran data dengan tepat disebelahnya secara terus menerus sampai bisa dipastikan dalam satu iterasi tertentu tidak ada lagi perubahan.
+
+```
+def BubbleSort(val):
+    for passnum in range(len(val)-1,0,-1):
+        for i in range(passnum):
+            if val[i]>val[i+1]:
+                temp = val[i]
+                val[i] = val[i+1]
+                val[i+1] = temp
+ 
+DaftarAngka = [20,5,30,100,3,25,9,17]
+BubbleSort(DaftarAngka)
+print("BubbleSort",DaftarAngka)
+hasil
+BubbleSort [3, 5, 9, 17, 20, 25, 30, 100]
+```
+
+* Selection sort
+Selection Sort adalah sorting dengan prinsip memilih elemen dengan nilai paling rendah dan menukar elemen tersebut dengan elemen ke-i. Nilai dari i dimulai dari 1 ke n, dimana n adalah julah total elemen dikurangi 1.
+
+```
+def SelectionSort(val):
+   for isi in range(len(val)-1,0,-1):
+       Max=0
+       for lokasi in range(1,isi+1):
+           if val[lokasi]>val[Max]:
+               Max = lokasi
+ 
+       temp = val[isi]
+       val[isi] = val[Max]
+       val[Max] = temp
+ 
+DaftarAngka = [23,7,32,99,4,15,11,20]
+SelectionSort(DaftarAngka)
+print("SelectionSort",DaftarAngka)
+hasil
+SelectionSort [4, 7, 11, 15, 20, 23, 32, 99]
+
+```
+
+* Inserttion sort
+
+Insertion sort adalah sebuah metode pengurutan data dengan menempatkan setiap elemen data pada pisisinya dengan cara melakukan perbandingan dengan data – data yang ada.
+```
+
+def InsertionSort(val):
+   for index in range(1,len(val)):
+ 
+     valueaktif = val[index]
+     posisi = index
+ 
+     while posisi>0 and val[posisi-1]>valueaktif:
+         val[posisi]=val[posisi-1]
+         posisi = posisi-1
+ 
+     val[posisi]=valueaktif
+ 
+DaftarAngka = [23,7,32,99,4,15,11,20]
+InsertionSort(DaftarAngka)
+print("InsertionSort",DaftarAngka)
+hasil 
+insertion sort [151, 76, 59, 54, 45, 34, 34, 3]
+```
+
+* Quick sort
+
+Quicksort merupakan Algoritme Pembagi. Pertama quicksort membagi list yang besar menjadi dua buah sub list yang lebih kecil: element kecil dan element besar. Quicksort kemudian dapat menyortir sub list itu secara rekursif. 
+```
+def quickshort(a,start,end):
+    if start<end:
+        pindex = partition(a,start,end)
+        quickshort(a,start,pindex-1)
+        quickshort(a,pindex+1,end)
+ 
+def partition(a,start,end):
+    middle = int(end/2)
+    pivot = a[middle]
+    pindex = start
+    for i in range(start,middle):
+        if a[i]>=pivot:
+            a[i],a[pindex]=a[pindex],a[i]
+            pindex = pindex + 1
+    a[pindex],a[middle]=a[middle],a[pindex]
+    print(a)
+    return pindex
+ 
+a = [5, 9, 4, 2, 3]
+quickshort(a,0,len(a)-1)
+hasil
+[5, 9, 4, 2, 3]
+[5, 9, 4, 2, 3]
+[5, 9, 2, 4, 3]
+```
+
+* Merged Sort
+
+Merge Sort adalah salah satu sorting dengan metode memecah data kemudian menyelesaikannya setiap bagian dan menggabungkannya kembali hingga data terurut.
+```
+def mergeSort(alist):
+    print("Splitting ",alist)
+    if len(alist)>1:
+        mid = len(alist)//2
+        lefthalf = alist[:mid]
+        righthalf = alist[mid:]
+
+        mergeSort(lefthalf)
+        mergeSort(righthalf)
+
+        i=0
+        j=0
+        k=0
+        while i < len(lefthalf) and j < len(righthalf):
+            if lefthalf[i] <= righthalf[j]:
+                alist[k]=lefthalf[i]
+                i=i+1
+            else:
+                alist[k]=righthalf[j]
+                j=j+1
+            k=k+1
+
+        while i < len(lefthalf):
+            alist[k]=lefthalf[i]
+            i=i+1
+            k=k+1
+
+        while j < len(righthalf):
+            alist[k]=righthalf[j]
+            j=j+1
+            k=k+1
+    print("Merging ",alist)
+
+alist = [54,26,93,17,77,31,44,55,20]
+mergeSort(alist)
+print(alist)
+
+hasil
+Splitting  [54, 26, 93, 17, 77, 31, 44, 55, 20]
+Splitting  [54, 26, 93, 17]
+Splitting  [54, 26]
+Splitting  [54]
+Merging  [54]
+Splitting  [26]
+Merging  [26]
+Merging  [26, 54]
+Splitting  [93, 17]
+Splitting  [93]
+Merging  [93]
+Splitting  [17]
+Merging  [17]
+Merging  [17, 93]
+Merging  [17, 26, 54, 93]
+Splitting  [77, 31, 44, 55, 20]
+Splitting  [77, 31]
+Splitting  [77]
+Merging  [77]
+Splitting  [31]
+Merging  [31]
+Merging  [31, 77]
+Splitting  [44, 55, 20]
+Splitting  [44]
+Merging  [44]
+Splitting  [55, 20]
+Splitting  [55]
+Merging  [55]
+Splitting  [20]
+Merging  [20]
+Merging  [20, 55]
+Merging  [20, 44, 55]
+Merging  [20, 31, 44, 55, 77]
+Merging  [17, 20, 26, 31, 44, 54, 55, 77, 93]
+[17, 20, 26, 31, 44, 54, 55, 77, 93]
+```

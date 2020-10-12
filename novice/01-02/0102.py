@@ -51,3 +51,8 @@ import math
 print(f'nilai pi matematika {math.pi:.3f}.')
 
 print('mulai labsos di "{}" - {}!'.format('praxis', 'academy'))
+
+while True print('Hello world')
+  File "<stdin>", line 1
+    while True print('Hello world')
+    hasil

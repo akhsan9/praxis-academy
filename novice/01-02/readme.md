@@ -50,7 +50,7 @@
 2. *Modules* di Python
 
 menampilkan fibo
-'''
+```
 
 def fib(n):    # write Fibonacci series up to n
     a, b = 0, 1
@@ -68,47 +68,82 @@ def fib2(n):   # return Fibonacci series up to n
     return result
 
     import fibo
-'''
+```
 
 
 
 
 3. Input Output di Python
 
-    '''
+    ```
     year = 9-12-2020
     event = 'pilkada'
     print(f'Results of the {year} {event}')
+    ```
 
-    '''
 string lieral
-'''
+
+```
 import math
 print(f'The value of pi is approximately {math.pi:.3f}.')
 hasil
 nilai pi matematika 3.142.
-'''
+```
 
-'''
+
+
+
+```
 table = {'andi': 4127, 'bayu': 4098, 'caca': 7678}
 for name, phone in table.items():
     print(f'{name:10} ==> {phone:10d}')
 
-    '''
+    ```
 
     Metode format String ()
     print()kerjanya: selalu menambahkan spasi di antara argumennya.)
-'''
+```
+
 print('mulai labsos di {} - "{}!"'.format('praxis', 'aacademy'))
-'''
+```
 
 Pemformatan string lama 
 Operator% (modulo) juga dapat digunakan untuk pemformatan string.
-'''
+```
 import math
 print('The value of pi is approximately %5.3f.' % math.pi)
 
-'''
+```
 
 4. Penanganan *errors dan exceptions*.
 
+kesalahan syntax
+```
+
+while True print('Hello world')
+  File "<stdin>", line 1
+    while True print('Hello world')
+    hasil
+    SyntaxError: invalid syntax
+
+    ```
+
+Pengecualian
+```
+10 * (1/0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+
+4 + spam*3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'spam' is not defined
+
+'2' + 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Can't convert 'int' object to str implicitly
+```
+Meningkatkan Pengecualian 
+```

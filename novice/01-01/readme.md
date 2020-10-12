@@ -63,26 +63,45 @@
 - 3.9 	  3.9.0 [] 	2020-10-05 [] 
 - 3.10 		-.-.- []  2021-10-25 []
 
- 5. 
+ 5. Instalasi
 
-4. [Riwayat versi dari Python](https://en.wikipedia.org/wiki/History_of_Python).
-Python adalah bahasa pemrograman yang ditafsirkan , tingkat tinggi , dan tujuan umum . Dibuat oleh Guido van Rossum dan pertama kali dirilis pada tahun 1991, Python dibuat pada akhir 1980-an sebagai penerus bahasa ABC . Python 2.0, dirilis pada tahun 2000, Bahasa Python 2 secara resmi dihentikan pada tahun 2020 (pertama kali direncanakan pada tahun 2015), dan "Python 2.7.18 adalah rilis terakhir Python 2.7 dan oleh karena itu merupakan rilis terakhir Python 2. 
+    pip sudah diinstal jika Anda menggunakan Python 2> = 2.7.9 atau Python 3> = 3.4 diunduh dari python.org atau jika Anda bekerja di Lingkungan Virtual yang dibuat oleh virtualenv atau pyvenv . Pastikan untuk mengupgrade pip .
 
+    Untuk menginstal pip, unduh 1 secara aman get-pip.pydengan mengikuti tautan ini: get-pip.py . Alternatifnya, gunakan curl:
 
-5. [Manual pip](https://pip.pypa.io/en/stable/). ####Instalasi python "pip3"
-1. sudo apt update - untuk update harian
-2. python get-pip.py untuk memilih pip
-3. sudo apt install python3-pip
-4. python --version
-5. python3 --version
-6. pip3 --version
-7. pip3 install jupyterlab
-8. pip3 install notebook
-- tambahan
-pip3 install voila,
-pip3 install numpy
+    Menginstal dengan get-pip.py
+    ```
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+    ```
 
-Pemakaian:
-  pip3 <perintah> [opsi]
+    Kemudian jalankan perintah berikut di folder tempat Anda mengunduh get-pip.py:
+    ```
+    python get-pip.py
+    ```
+
+    Meningkatkan pip di Linux atau macOS:
+
+    ```
+    pip install -U pip
+    ```
+
+    Di Windows 4 :
+
+    ``` 
+    python -m pip install -U pip 
+    ```
+    untuk ysng menggunakan pip3
+* sudo apt update #untuk update harian
+* python3 get-pip.py #untuk memilih pip
+* sudo apt install python3-pip
+* python --version
+* python3 --version
+* pip3 --version
+* pip3 install jupyterlab
+* pip3 install notebook
+
+ tambahan
+* pip3 install voila,
+* pip3 install numpy
 
 

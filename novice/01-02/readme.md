@@ -48,6 +48,24 @@
 
     ```
 2. *Modules* di Python
+    Pernyataan from..import 
+    ```
+    from math import sqrt
+    print("Square root dari 16 yaitu", sqrt(16))
+    hasil
+    Square root dari 16 yaitu 4.0
+    ```
+    Sebuah modul __name__ 
+    ```
+    if __name__ == '__main__':
+    print('Program ini dijalankan dengan sendirinya')
+    else:
+    print ('program ini sedang diimpor dari modul lain')
+    ```
+    Membuat dir bekerja
+    ```
+    
+
 
 3. Input Output di Python
 4. Penanganan *errors dan exceptions*.

@@ -36,14 +36,18 @@ print ('salak' in basket)
 
 
 from math import sqrt
-print("Square root dari 16 yaitu", sqrt(16))
+print("Square root of 16 is", sqrt(16))
 
-if __name__ == '__main__':
-    print('Program ini dijalankan dengan sendirinya')
-else:
-    print ('program ini sedang diimpor dari modul lain')
 
- 
->>> import sys
+year = 9-12-2020
+event = 'pilkada'
+print(f'Results of the {year} {event}')
 
-# get names of attributes in sys module
+table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
+for name, phone in table.items():
+    print(f'{name:10} ==> {phone:10d}')
+
+import math
+print(f'nilai pi matematika {math.pi:.3f}.')
+
+print('mulai labsos di "{}" - {}!'.format('praxis', 'academy'))

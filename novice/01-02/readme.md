@@ -48,25 +48,67 @@
 
     ```
 2. *Modules* di Python
-    Pernyataan from..import 
-    ```
-    from math import sqrt
-    print("Square root dari 16 yaitu", sqrt(16))
-    hasil
-    Square root dari 16 yaitu 4.0
-    ```
-    Sebuah modul __name__ 
-    ```
-    if __name__ == '__main__':
-    print('Program ini dijalankan dengan sendirinya')
-    else:
-    print ('program ini sedang diimpor dari modul lain')
-    ```
-    Membuat dir bekerja
-    ```
-    
+
+menampilkan fibo
+'''
+
+def fib(n):    # write Fibonacci series up to n
+    a, b = 0, 1
+    while a < n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+
+def fib2(n):   # return Fibonacci series up to n
+    result = []
+    a, b = 0, 1
+    while a < n:
+        result.append(a)
+        a, b = b, a+b
+    return result
+
+    import fibo
+'''
+
+
 
 
 3. Input Output di Python
+
+    '''
+    year = 9-12-2020
+    event = 'pilkada'
+    print(f'Results of the {year} {event}')
+
+    '''
+string lieral
+'''
+import math
+print(f'The value of pi is approximately {math.pi:.3f}.')
+hasil
+nilai pi matematika 3.142.
+'''
+
+'''
+table = {'andi': 4127, 'bayu': 4098, 'caca': 7678}
+for name, phone in table.items():
+    print(f'{name:10} ==> {phone:10d}')
+
+    '''
+
+    Metode format String ()
+    print()kerjanya: selalu menambahkan spasi di antara argumennya.)
+'''
+print('mulai labsos di {} - "{}!"'.format('praxis', 'aacademy'))
+'''
+
+Pemformatan string lama 
+Operator% (modulo) juga dapat digunakan untuk pemformatan string.
+'''
+import math
+print('The value of pi is approximately %5.3f.' % math.pi)
+
+'''
+
 4. Penanganan *errors dan exceptions*.
 

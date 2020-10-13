@@ -651,7 +651,7 @@ x = json.load(f)
 ```
 
 
-4. Penanganan *errors dan exceptions*.
+## 4. Penanganan *errors dan exceptions*.
 
 Sampai saat ini pesan kesalahan belum lebih dari disebutkan, tetapi jika Anda telah mencoba contohnya, Anda mungkin telah melihat beberapa. Ada (setidaknya) dua jenis kesalahan yang dapat dibedakan: kesalahan sintaks dan pengecualian .
 
@@ -887,5 +887,7 @@ Sumber :
 https://docs.python.org/3/tutorial/datastructures.html
 https://docs.python.org/3/tutorial/modules.html
 https://docs.python.org/3/tutorial/inputoutput.html
+https://docs.python.org/3/tutorial/errors.html
+
 
 

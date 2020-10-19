@@ -1,57 +1,45 @@
 [
-    {
-      "name": "Turis",
-      "superclasses": "",
-      "subclasses": "",
-      "type": 1,
-      "responsibilities": [
-        "Melihat peta wisata",
-        "Melakukan pemesanan hotel",
-      ],
-      "collaborators": [
-        "PETA LOKASI",
-        "RESERVASI HOTEL",
-        "APLIKASI WISATA"
-      ]
-    },
-    {
-      "name": "Peta Lokasi",
-      "superclasses": "",
-      "subclasses": "",
-      "type": 1,
-      "responsibilities": [
-        "Menunjukan lokasi wisata",
-        "Mencarikan rute paling efektif menuju wisata",
-        "Menampilkan lokasi saat membuka aplikasi"
-      ],
-      "collaborators": [
-        "Turis"
-      ]
-    },
-    {
-      "name": "Reservasi Hotel",
-      "superclasses": "",
-      "subclasses": "",
-      "type": 1,
-      "responsibilities": [
-        "Menampilkan info penyewaan hotel",
-        "Memberikan info tentang Hotel"
-      ],
-      "collaborators": [
-        "Turis"
-      ]
-    },
-    {
-      "name": "Aplikasi Wisata",
-      "superclasses": "",
-      "subclasses": "",
-      "type": 1,
-      "responsibilities": [
-        "Menerima data baru dari tempat wisata disekitar wilayah",
-        "Memberikan informasi wisata"
-      ],
-      "collaborators": [
-        "Turis"
-      ]
-    }
-  ]
+  {
+    "name": "Turis",
+    "responsibilities": [
+      "Melihat peta wisata",
+      "Melakukan pemesanan hotel"
+    ],
+    "collaborators": [
+      "PETA LOKASI",
+      "RESERVASI HOTEL",
+      "APLIKASI WISATA"
+    ]
+  },
+  {
+    "name": "Peta Lokasi",
+    "responsibilities": [
+      "Menunjukan lokasi wisata",
+      "Mencarikan rute paling efektif menuju wisata",
+      "Menampilkan lokasi saat membuka aplikasi"
+    ],
+    "collaborators": [
+      "Turis"
+    ]
+  },
+  {
+    "name": "Reservasi Hotel",
+    "responsibilities": [
+      "Menampilkan info penyewaan hotel",
+      "Memberikan info tentang Hotel"
+    ],
+    "collaborators": [
+      "Turis"
+    ]
+  },
+  {
+    "name": "Aplikasi Wisata",
+    "responsibilities": [
+      "Menerima data baru dari tempat wisata disekitar wilayah",
+      "Memberikan informasi wisata"
+    ],
+    "collaborators": [
+      "Turis"
+    ]
+  }
+]

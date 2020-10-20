@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<MenteriKordinator>
+		<id>A001</id>
+		<namaLengkap>Mohammad Mahfud Md</namaLengkap>
+		<bagian>Politik, Hukum, dan Keamanan</bagian>
+  <MenteriKordinator/>
+  <MenteriKordinator>
+		<id>A001</id>
+		<namaLengkap>Airlangga Hartarto</namaLengkap>
+		<bagian>Perekonomian</bagian>
+  <MenteriKordinator/>
+  <MenteriKordinator>
+		<id>A001</id>
+		<namaLengkap>Muhadjir Effendy</namaLengkap>
+		<bagian>Pembangunan Manusia dan Kebudayaan</bagian>
+  <MenteriKordinator/>
+  <MenteriKordinator>
+		<id>A001</id>
+		<namaLengkap>Luhut Binsar Pandjaitan</namaLengkap>
+		<bagian>Kemaritiman dan Investasi</bagian>
+  <MenteriKordinator/>
+</root>

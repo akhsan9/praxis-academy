@@ -1,0 +1,27 @@
+{
+  "MenteriKordinator": [ 
+	
+     { 
+        "id":"A001", 
+        "namaLengkap": "Mohammad Mahfud Md", 
+        "bidang": "Politik, Hukum, dan Keamanan" 
+     }, 
+	
+     { 
+        "id":"A002", 
+        "name": "Airlangga Hartarto", 
+        "bagian": "Perekonomian" 
+     },
+
+     { 
+      "id":"A003", 
+      "name": "Muhadjir Effendy", 
+      "bagian": "Pembangunan Manusia dan Kebudayaan" 
+     }, 
+     { 
+      "id":"A004", 
+      "name": "Luhut Binsar Pandjaitan", 
+      "bagian": "Kemaritiman dan Investasi" 
+     } 
+  ]   
+}

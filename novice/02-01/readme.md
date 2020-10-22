@@ -31,7 +31,7 @@ Bahasa fungsional adalah bahasa deklaratif , mereka memberi tahu komputer hasil 
 
 Beberapa fitur Python dipengaruhi oleh Haskell , bahasa pemrograman yang murni berfungsi. Untuk mendapatkan pemahaman yang lebih baik tentang apa itu bahasa fungsional, mari kita lihat fitur-fitur di Haskell yang dapat dilihat sebagai ciri fungsional yang diinginkan:
 
-* Fungsi Murni - tidak memiliki efek samping, yaitu tidak mengubah status program. Dengan masukan yang sama, fungsi murni akan selalu menghasilkan keluaran yang sama.
+* Fungsi Murni/Pure Functions - tidak memiliki efek samping, yaitu tidak mengubah status program. Dengan masukan yang sama, fungsi murni akan selalu menghasilkan keluaran yang sama.
 
 
 fungsi murni untuk mengalikan angka dengan 2:
@@ -48,7 +48,7 @@ print(original_numbers) # [1, 3, 5, 10]
 print(changed_numbers)  # [2, 6, 10, 20]
 ```
 
-* Kekekalan - data tidak dapat diubah setelah dibuat. Ambil contoh membuat Listdengan 3 item dan menyimpannya dalam variabel my_list. Jika my_listtidak dapat diubah, Anda tidak akan dapat mengubah item satu per satu. Anda harus menyetel my_listke baru Listjika Anda ingin menggunakan nilai yang berbeda.
+* Kekekalan/Immutability - data tidak dapat diubah setelah dibuat. Ambil contoh membuat Listdengan 3 item dan menyimpannya dalam variabel my_list. Jika my_listtidak dapat diubah, Anda tidak akan dapat mengubah item satu per satu. Anda harus menyetel my_listke baru Listjika Anda ingin menggunakan nilai yang berbeda.
 
 Python menawarkan beberapa tipe data yang tidak dapat diubah, yang populer adalah Tuple. Mari kontraskan Tuple dengan List , yang bisa berubah:
 ```
@@ -66,7 +66,7 @@ mutable_collection[1] = 15
 immutable_collection[1] = 15
 ```
 
-* Fungsi Urutan Tinggi - fungsi dapat menerima fungsi lain sebagai parameter dan fungsi dapat mengembalikan fungsi baru sebagai keluaran. Ini memungkinkan kita untuk mengabstraksi tindakan, memberi kita fleksibilitas dalam perilaku kode kita.
+* Fungsi Urutan Tinggi/Higher Order Functions - fungsi dapat menerima fungsi lain sebagai parameter dan fungsi dapat mengembalikan fungsi baru sebagai keluaran. Ini memungkinkan kita untuk mengabstraksi tindakan, memberi kita fleksibilitas dalam perilaku kode kita.
 
 Haskell juga memengaruhi iterator dan generator di Python melalui pemuatan lambatnya, tetapi fitur itu tidak diperlukan untuk bahasa fungsional.
 
@@ -81,7 +81,7 @@ def write_repeat(message, n):
 write_repeat('Hello', 5)
 ```
 
-### Ekspresi Lambda
+### Ekspresi Lambda/Lambda Expressions
 
 Ekspresi lambda adalah fungsi anonim. Saat kami membuat fungsi dengan Python, kami menggunakan defkata kunci dan memberinya nama. Ekspresi lambda memungkinkan kita untuk mendefinisikan suatu fungsi dengan lebih cepat.
 
@@ -94,11 +94,11 @@ mult6 = hof_product(6)
 print(mult6(6)) # 36
 ```
 
-### Fungsi Urutan Tinggi Bawaan
+### Fungsi Urutan Tinggi Bawaan/Built-in Higher Order Functions
 
 Python telah mengimplementasikan beberapa Fungsi Urutan Tinggi yang umum digunakan dari Bahasa Pemrograman Fungsional yang membuat pemrosesan objek yang dapat diulang seperti daftar dan iterator jauh lebih mudah. Untuk alasan efisiensi ruang / memori, fungsi ini mengembalikan iteratoralih - alih daftar.
 
-### Peta
+### Peta/Map
 
 The mapFungsi memungkinkan kita untuk menerapkan fungsi untuk setiap elemen dalam suatu objek iterable. Misalnya, jika kita memiliki daftar nama dan ingin menambahkan salam ke String, kita bisa melakukan hal berikut:
 ```
@@ -114,7 +114,7 @@ for name in greeted_names:
     print(name)
 ```
 
-### Saring
+### Saring/Filter
 
 The filterFungsi tes setiap elemen dalam suatu objek iterable dengan fungsi yang kembali baik Trueatau False, hanya menjaga mereka yang mengevaluasi untuk True. Jika kita memiliki daftar angka dan ingin menyimpan yang habis dibagi 5 kita dapat melakukan hal berikut:
 ```
@@ -125,7 +125,7 @@ div_by_5 = filter(lambda num: num % 5 == 0, numbers)
 print(list(div_by_5)) # [35]
 ```
 
-### Menggabungkan mapdanfilter
+### Menggabungkan map dan filter/Combining
 
 Karena setiap fungsi mengembalikan iterator, dan keduanya menerima objek yang dapat berulang, kita dapat menggunakannya bersama untuk manipulasi data yang sangat ekspresif!
 ```
@@ -140,7 +140,7 @@ Ekspresi dalam arbitrary_numbersdapat dipecah menjadi 3 bagian:
 * filter(lambda num: num % 3 == 0, range(1, 21)) adalah iterator untuk urutan bilangan 3, 6, 9, 12, 15 dan 18.
 * Saat kubik dengan mapekspresi kita bisa mendapatkan iterator untuk urutan bilangan 27, 216, 729, 1728, 3375 dan 5832.
 
-### Daftar Pemahaman
+### Daftar Pemahaman/List Comprehensions
 
 Fitur Python populer yang muncul secara mencolok dalam Bahasa Pemrograman Fungsional adalah pemahaman daftar. Seperti fungsi mapdan filter, pemahaman daftar memungkinkan kita memodifikasi data dengan cara yang ringkas dan ekspresif.
 
@@ -153,7 +153,7 @@ greeted_names = ['Hi ' + name for name in names]
 
 print(greeted_names) # ['Hi Shivani', 'Hi Jason', 'Hi Yusef', 'Hi Sakura']
 ```
-Kesimpulan
+### Kesimpulan
 
 Pemrograman Fungsional adalah paradigma pemrograman dengan perangkat lunak terutama terdiri dari fungsi pemrosesan data selama pelaksanaannya. Meskipun tidak ada satu definisi tunggal tentang apa itu Pemrograman Fungsional, kami dapat memeriksa beberapa fitur menonjol dalam Bahasa Fungsional: Fungsi Murni, Keabadian, dan Fungsi Urutan Tinggi.
 

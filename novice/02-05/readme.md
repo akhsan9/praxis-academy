@@ -49,6 +49,32 @@ Bahasa database juga dapat menggabungkan fitur-fitur seperti:
 
 
 
+## 3.`Django Web Framework (Python)
+
+Django merupakan salah satu web framework server-side paling populer dan unggul.
+
+Apa itu server web?
+
+Istilah web server dapat merujuk pada perangkat keras atau perangkat lunak, atau keduanya bekerja sama.
+* Di sisi perangkat keras, server web adalah komputer yang menyimpan perangkat lunak server web dan file komponen situs web. (misalnya, dokumen HTML, gambar, lembar gaya CSS, dan file JavaScript) Server web terhubung ke Internet dan mendukung pertukaran data fisik dengan perangkat lain yang terhubung ke web.
+* Di sisi perangkat lunak, server web menyertakan beberapa bagian yang mengontrol cara pengguna web mengakses file yang dihosting. Minimal, ini adalah server HTTP . Server HTTP adalah perangkat lunak yang memahami URL (alamat web) dan HTTP (protokol yang digunakan browser Anda untuk melihat halaman web). Server HTTP dapat diakses melalui nama domain situs web yang disimpannya, dan mengirimkan konten situs web yang dihosting ini ke perangkat pengguna akhir.
+
+Perangkat lunak apa yang saya perlukan untuk membangun situs web?
+
+Alat yg dibutuhkan:
+
+* Buat dan edit halaman web dengan  editor teks.
+* Unggah file ke server web seperti RSync dan Git / GitHub .
+* Lihat situs web anda melalui browser.
+
+Hampir semua sistem operasi secara default menyertakan editor teks dan browser, yang dapat Anda gunakan untuk melihat situs web. Akibatnya, Anda biasanya hanya perlu memperoleh perangkat lunak untuk mentransfer file ke server web Anda.
+
+SFTP
+
+Ada beberapa klien SFTP di luar sana. Demo ini mencakup FileZilla , karena gratis dan tersedia untuk Windows, macOS, dan Linux. Untuk menginstal FileZilla masuk ke halaman download FileZilla , klik tombol Download besar, kemudian instal dari file installer dengan cara biasa.
 
 
+
+materi: 
+https://developer.mozilla.org/id/docs/Learn/Server-side/Django
 https://github.com/praxis-academy/akademik/blob/v2.0/kurikulum/enterprise-python/isi/02.md

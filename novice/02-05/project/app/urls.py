@@ -6,18 +6,22 @@ Examples:
 Function views
     1. Add an import:  from my_app import views
     2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
+Class-based views/
     1. Add an import:  from other_app.views import Home
     2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
 Including another URLconf
     1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
+    2. Add a URL to urlpatterns:  path('blog/', include('blog.u/rls'))
 """
 from django.shortcuts import render
 from django.contrib import admin
 from django.urls import path
-from .import views
 
-urlpatterns = [
+from . import views
+
+urlpatterns = [    
     path('', views.index),
+    path('<id>/', views.detail),
+    # path('<id>/delete', views),
+    # path('<id>/edit', views.edit),
 ]

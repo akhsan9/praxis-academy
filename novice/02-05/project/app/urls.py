@@ -22,6 +22,6 @@ from . import views
 urlpatterns = [    
     path('', views.index),
     path('<id>/', views.detail),
-    # path('<id>/delete', views),
-    # path('<id>/edit', views.edit),
+    path('<id>/edit', views.edit),
+    path('<id>/hapus', views.delete),
 ]

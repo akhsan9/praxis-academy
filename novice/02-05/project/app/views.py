@@ -1,21 +1,28 @@
 from django.shortcuts import render, redirect
 
-from . import models
+from . import models, forms
 
-# Create your views here.
 
-#	Cara menambahkan data atau 'CREATE' data
-def index(req): # definisikan method index, parameter request
-	if req.POST:
-		models.Task.objects.create(name=req.POST['name'])
-		return redirect('/') # mengembalikan (redirect) ke root /
-
+def index(req): # 
+	
 	tasks = models.Task.objects.all() # ditampung di Variabel tasks
-	return render(req, 'task/index.html', #mengembalikan (render) halaman yang mau ditampilkn
-		{ 'data': tasks, # return dictionary untuk mengakses value di key, data menampung task, 
-		}) 
+	return render(req, 'task/index.html', 
+		{ 'data': tasks, 
+		})  
 
-#	Menghubungkan dengan halaman 'detail.html' membuat 'READ'
+def create(req):
+	form_input = forms.TaskForm()
+	if req.POST:
+		form_input = forms.TaskForm(req.POST)
+		if form_input.is_valid():
+			form_input.save()
+			return redirect('/app/')
+
+	return render(req, 'task/create.html', 
+		{ 
+		'form': form_input,
+		})
+
 def detail(req, id):	
 	task = models.Task.objects.filter(pk=id).first() # model first
 	return render(req, 'task/detail.html',
@@ -28,7 +35,7 @@ def edit(req, id):
 	if req.POST:
 		models.Task.objects.filter(pk=id).update(
 			name=req.POST['name'])
-		return redirect('/')
+		return redirect('/app')
 
 	tasks = models.Task.objects.filter(pk=id).first()
 	return render(req, 'task/edit.html', {
@@ -38,5 +45,5 @@ def edit(req, id):
 # buat delet
 def delete(req, id): #delete fungsi
 	task = models.Task.objects.filter(pk=id).delete() #variabel task
-	return redirect('/')
+	return redirect('/app')
 

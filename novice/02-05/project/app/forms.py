@@ -5,4 +5,5 @@ from . import models
 class TaskForm(ModelForm):
     class Meta :
         model = models.Task
+        # fields = ('name', 'telp', 'seri', 'country', 'kerusakan', 'status')
         exclude=[]

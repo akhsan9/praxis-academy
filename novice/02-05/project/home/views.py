@@ -1,17 +1,55 @@
-# from django.shortcuts import render
 
-# from . import models
-
-# Create your views here.
-
-#	Cara menambahkan data atau 'CREATE' data
-# def index(req): # definisikan method index, parameter request
-# 		tasks = models.Task.objects.all() # ditampung di Variabel tasks
-# 	return render(req, 'home/index.html', {
-#          'data': tasks, 
-# 		})  
-
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from . import models, forms
 
 def index(req):
-    return render(req, 'home/index.html')
+	home = models.Homer.objects.all()
+	return render(req, 'home/index.html',
+	{
+		'data': home,
+	})
+
+def tambah(req):
+	form_input = forms.HomeForm()
+	if req.POST:
+		form_input = forms.HomeForm(req.POST)
+		if form_input.is_valid():
+			form_input.save()
+			return redirect('/')
+
+	return render(req, 'home/tambah.html', 
+		{ 
+		'form': form_input,
+		})
+
+# def detail(req, id):	
+# 	task = models.Homer.objects.filter(pk=id).first()
+# 	return render(req, 'home/detail.html',
+# 		{ 'data': task,
+# 		})
+
+# def detaile(req, id):
+# 	task = models.Homer.objects.filter(pk=id).first()
+# 	return render(req, 'home/detaile.html', 
+# 	{
+# 		'data': task,
+# 	})
+
+def edited(req, id):
+	if req.POST:
+		models.Homer.objects.filter(pk=id).update(
+			nama=req.POST['nama'],
+			telpon=req.POST['telpon'],
+			kota=req.POST['kota'],
+			statuses=req.POST['statuses'])
+		return redirect('/')
+
+	tasks = models.Homer.objects.filter(pk=id).first()
+	return render(req, 'home/edit.html', {
+		'data': tasks,
+		})
+
+def delete(req, id): 
+	task = models.Homer.objects.filter(pk=id).delete()
+	return redirect('/')
+

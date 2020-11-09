@@ -5,7 +5,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <h1 class="m-0">Update Data Pelanggan</h1>
+      <h1 class="m-0">Update Data Servis</h1>
     </div>
   </div>
     <!-- <a  href="/{{d.id}}">Home</a> -->
@@ -17,17 +17,13 @@
                 {% csrf_token %}
                 <div class="form-group">
                   <label for="usr">Nama Task</label>
-                  <input type="text" name="name" class="form-control" value="{{data.name}}"><br>
+                  <input type="text" name="nama" class="form-control" value="{{data.nama}}"><br>
                   <label for="usr">Nomor Telepon</label>
-                  <input type="text" name="telp" value="{{data.telp}}" class="form-control mt-2"><br>
-                  <label for="usr">Seri Laptop</label>
-                  <input type="text" name="seri" value="{{data.seri}}" class="form-control mt-2"><br>
+                  <input type="text" name="telpon" value="{{data.telpon}}" class="form-control mt-2"><br>
                   <label for="usr">Kota</label>
-                  <input type="text" name="country" value="{{data.country}}" class="form-control mt-2"><br>
-                  <label for="usr">Kerusakan</label>
-                  <input type="text" name="kerusakan" value="{{data.kerusakan}}" class="form-control mt-2"><br>
+                  <input type="text" name="kota" value="{{data.kota}}" class="form-control mt-2"><br>
                   <label for="usr">Status</label>
-                  <input type="text" name="status" value="{{data.status}}" class="form-control mt-2"><br>
+                  <input type="text" name="statuses" value="{{data.statuses}}" class="form-control mt-2"><br>
                   <button type="submit" class="btn btn-primary mt-2">Simpan</button>
                 </div>
             </form>

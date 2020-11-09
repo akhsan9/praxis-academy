@@ -4,7 +4,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <h1 class="m-0">Data Pelanggan</h1>
+      <h1 class="m-0">Pelanggan</h1>
     </div>
     
 <div class="container">
@@ -23,7 +23,9 @@
           <!-- <th scope="col">ID</th> -->
           <th scope="col">Nama</th>  
           <th scope="col">Nomor Telepon</th>
-          <th scope="col">Seri Laptop</th>  
+          <th scope="col">Seri Laptop</th>
+          <th scope="col">Country</th>
+          <th scope="col">kerusakan</th>
           <th scope="col">Status</th>
           <th scope="col">Action</th>
         </tr>
@@ -36,11 +38,14 @@
           <td>{{d.name}}</td>
           <td>{{d.telp}}</td>
           <td>{{d.seri}}</td>
+          <td>{{d.country}}</td>
+          <td>{{d.kerusakan}}</td>
           <td>{{d.status}}</td>
           <td>
               <a  class="btn btn-sm btn-success" href="{{d.id}}/">Detail</a>
               <a  class="btn btn-sm btn-warning" href="{{d.id}}/edit">Edit</a>
               <a  class="btn btn-sm btn-danger"  href="{{d.id}}/hapus">Hapus</a>
+              <!-- <a  class="btn btn-sm btn-primary" href="/keranjang/add/{{d.id}}">kerjakan</a> -->
             </td>
           </td>
       </tr>

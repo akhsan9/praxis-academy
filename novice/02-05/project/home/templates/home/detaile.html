@@ -5,7 +5,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <h1 class="m-0">Tampilan Pelanggan</h1>
+      <h1 class="m-0">Tampilan Servis</h1>
     </div>
   </div>
        
@@ -14,24 +14,23 @@
     <thead>
       <tr>
         <th scope="col">Id</th>
-        <th scope="col">Pelanggan</th>
+        <th scope="col">Teknisi</th>
         <th scope="col">Nomor Telepon</th>
-        <th scope="col">Seri Laptop</th>
         <th scope="col">Country</th>
-        <th scope="col">kerusakan</th>
         <th scope="col">Status</th>
       </tr>
     </thead>
   <tbody>
+    {% for d in data %}
     <tr>
-        <th scope="row">{{data.id}}</th>
-        <td>{{data.name}}</td>
-        <td>{{data.telp}}</td>
-        <td>{{data.seri}}</td>
-        <td>{{data.country}}</td>
-        <td>{{data.kerusakan}}</td>
-        <td>{{data.status}}</td>
+        <th scope="row">{{d.id}}</th>
+        <td>{{d.nama}}</td>
+        <td>{{d.telpon}}</td>
+        <td>{{d.kota}}</td>
+        <td>{{d.statuses}}</td>
     </tr>
+
+    {% endfor %}
   </table>
 </div>
 {% endblock %}

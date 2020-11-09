@@ -4,7 +4,7 @@
 <div class="container mt-3">
   <div class="row">
     <div class="col">
-      <h1 class="m-0">Servis</h1>
+      <h1 class="m-0">Gudang</h1>
     </div>
     
 <div class="container">
@@ -21,9 +21,9 @@
         <tr>
           <th scope="col">No</th>
           <th scope="col">Nama</th>  
-          <th scope="col">Nomor Telepon</th>
-          <th scope="col">Country</th>
-          <th scope="col">Status</th>
+          <th scope="col">Serial</th>
+          <th scope="col">Stok</th>
+          <!-- <th scope="col">Status</th> -->
           <th scope="col">Action</th>
         </tr>
 
@@ -32,10 +32,10 @@
           <!-- <th scope="row">{{forloop.counter}}</th> -->
           <th scope="row">{{forloop.counter}}</th>
           <!-- <td>{{d.id}}</td> -->
-          <td>{{d.nama}}</td>
-          <td>{{d.telpon}}</td>
-          <td>{{d.kota}}</td>
-          <td>{{d.statuses}}</td>
+          <td>{{d.names}}</td>
+          <td>{{d.series}}</td>
+          <td>{{d.stok}}</td>
+          <!-- <td>{{d.onderdil}}</td> -->
           <td>
               <a  class="btn btn-sm btn-success" href="{{d.id}}/">Detail</a>
               <a  class="btn btn-sm btn-warning" href="{{d.id}}/edit">Edit</a>

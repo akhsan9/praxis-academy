@@ -6,6 +6,7 @@ from . import models, forms
 def index(req): # 
 	
 	tasks = models.Task.objects.all() # ditampung di Variabel tasks
+	# fields = ('name', 'telp', 'seri', 'country', 'kerusakan', 'status')
 	return render(req, 'task/index.html', 
 		{ 'data': tasks, 
 		})  
@@ -34,7 +35,12 @@ def detail(req, id):
 def edit(req, id):
 	if req.POST:
 		models.Task.objects.filter(pk=id).update(
-			name=req.POST['name'])
+			name=req.POST['name'],
+			telp=req.POST['telp'],
+			seri=req.POST['seri'],
+			country=req.POST['country'],
+			kerusakan=req.POST['kerusakan'],
+			status=req.POST['status'])
 		return redirect('/app')
 
 	tasks = models.Task.objects.filter(pk=id).first()

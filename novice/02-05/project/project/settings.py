@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     'home',
     'app',
-    # 'barang',
+    'barang',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

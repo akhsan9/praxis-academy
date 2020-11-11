@@ -22,18 +22,12 @@ def tambah(req):
 		'form': form_input,
 		})
 
-# def detail(req, id):	
-# 	task = models.Homer.objects.filter(pk=id).first()
-# 	return render(req, 'home/detail.html',
-# 		{ 'data': task,
-# 		})
-
-# def detaile(req, id):
-# 	task = models.Homer.objects.filter(pk=id).first()
-# 	return render(req, 'home/detaile.html', 
-# 	{
-# 		'data': task,
-# 	})
+def detaile(req, id):
+	task = models.Homer.objects.filter(id=id)
+	return render(req, 'home/detaile.html', 
+	{
+		'task': task,
+	})
 
 def edited(req, id):
 	if req.POST:

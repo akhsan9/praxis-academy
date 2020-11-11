@@ -22,7 +22,7 @@ from . import views
 urlpatterns = [    
     path('', views.index),
     path('create/', views.create),
-    path('<id>/view-app', views.detail),
-    path('<id>/edit-app', views.edit),
-    path('<id>/hapus-app', views.delete),
+    path('<id>/', views.detail),
+    path('<id>/edit', views.edit),
+    path('<id>/hapus', views.delete),
 ]
